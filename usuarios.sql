@@ -16,6 +16,7 @@ use recursamiento;
 * genero: gender en'M''F' nn
 * nacionalidad: country_id int nn
 * identificador: id int pk ai
+* 
 */
 create table users (
     id int auto_increment,
@@ -289,12 +290,3 @@ INSERT INTO `countries` VALUES(237, 'YE', 'Yemen');
 INSERT INTO `countries` VALUES(238, 'DJ', 'Yibuti');
 INSERT INTO `countries` VALUES(239, 'ZM', 'Zambia');
 INSERT INTO `countries` VALUES(240, 'ZW', 'Zimbabue');
-
-
-
-
-
-
-
-
-

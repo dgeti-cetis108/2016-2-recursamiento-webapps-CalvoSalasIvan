@@ -3,7 +3,7 @@
 create database recursamiento;
 use recursamiento;
 /*
-*
+* 
 * tabla usuarios: users
 * nombre completo de la persona: 
 * firstname varchar(50) nn 

@@ -1,7 +1,8 @@
 /*  Relgas CSS*/
 
-p,h1,h2,h3,h4{
+p,h1,h2,h3,h4,h5,h6,figure{
     margin: 0px;
+    border: 0px;
     padding: 0px;
 
 }
@@ -62,5 +63,9 @@ p,h1,h2,h3,h4{
 #nota-principal{
     padding: 8px;
     box-shadow: 0px 0px 10px gray;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+.cajaflex{display: flex;}
+.cajaflex.between {justify-content: space-between;}
+.cajaflex.around {justify-content: space-between;}

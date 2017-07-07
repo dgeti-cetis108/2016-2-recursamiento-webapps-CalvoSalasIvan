@@ -6,7 +6,10 @@ p,h1,h2,h3,h4,h5,h6,figure{
     padding: 0px;
 
 }
+/*Tipo class .*/
+/* Organizar las reglas CDD descritas debajo, po secciones del sitio y por tipo de regla*/
 /* Tipo de id # */
+
 #encabezado {
     width: 980px;
     display: flex;
@@ -69,3 +72,89 @@ p,h1,h2,h3,h4,h5,h6,figure{
 .cajaflex{display: flex;}
 .cajaflex.between {justify-content: space-between;}
 .cajaflex.around {justify-content: space-between;}
+
+.titulo-nota{
+    font-variant: small-caps;
+}
+
+.titulo-nota>a {
+    color: #b92025;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+.titulo-nota>a:hover {text-decoration: underline;}
+
+.intro-nota {
+    text-align: justify;
+    margin-top: 8px;
+}
+.leer-nota {
+    display: inline-block;
+    width: 118px;
+    height: 30px;
+    background-image: url('../images/boton_rojo.png');
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-variant: small-caps;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.contenido-nota {
+    width: 62%;
+}
+
+.sombra-imagen {
+    box-shadow: 0 0 5px gray;
+}
+.imagen-nota{
+    position: relative;
+}
+.imagen-nota>figcaption {
+    width: 66px;
+    height: 31px;
+    background-image: url('../images/cinta.png');
+    padding-left: 15px;
+    padding-top: 6px; 
+    position: absolute;
+    top: 15px;
+    left: -12px;
+}
+#notas>article {
+    background-image: url('../images/sombra_notas_abajo.png');
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+#banners {
+    border-left: 1px solid gray;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+#banners>a{
+    display: block;
+    margin-bottom: 10px;
+}
+#programas{
+    margin:20px 0;
+}
+#enlaces>.bloque>h3{
+    font-variant: small-caps;
+    color: #b92025;
+    font-size: 1.5em;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+#enlaces>.bloque>a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+#enlaces>.bloque>a:hover{color: #b92025;}
+
+#enlaces>.bloque{
+    padding: 0 15px;
+    line-height: 1.8em;
+}
+#enlaces{margin-bottom: 40px;}

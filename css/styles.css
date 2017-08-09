@@ -1,106 +1,110 @@
-/*  Relgas CSS*/
-
-p,h1,h2,h3,h4,h5,h6,figure{
-    margin: 0px;
-    border: 0px;
-    padding: 0px;
-
+/* Reglas CSS*/
+/*Tipo etiqueta*/
+body, h1, h2, h3, h4, h5, h6, figure {
+    margin: 0;
+    border:0;
+    padding: 0;
 }
-/*Tipo class .*/
-/* Organizar las reglas CDD descritas debajo, po secciones del sitio y por tipo de regla*/
-/* Tipo de id # */
 
-#encabezado {
+/*Tipo .clase*/
+
+/*Tipo #id*/
+#encabezado{
     width: 980px;
-    display: flex;
     /*margin: auto;*/
+    display: flex;
     justify-content: space-between;
     /*margin-top: 20px;
-    margin-left: auto;
+    margin-left:auto;
     margin-right: auto;
     margin-bottom: 10px;*/
     margin: 20px auto 10px;
 }
-/*#encabezado>div>img {
-    widows: 200px;
+
+/*#encabezado>div>img{
+    width: 200px;
     height: 100px;
 }*/
-#encabezado h1{
-    font-size: 1.5em;
-    
-}
-#encabezado h2{    font-size: 1.2em;   }
-#encabezado h3{    font-size: 1em;     }
-#encabezado h3{    font-size: 0.7em;   }
-#encabezado h4{    font-size: 0.5em;   }
 
-#encabezado>div:first-child{
+#encabezado h1 { font-size: 1.2em; }
+#encabezado h2 { font-size: 1em; }
+#encabezado h3 { font-size: 0.7em; }
+#encabezado h4 { font-size: 0.5em; }
+
+#encabezado>div:first-child {
     display: flex;
 }
-#menu a{
+
+#menu a {
     text-decoration: none;
     color: black;
-    font-variant:small-caps;
-    padding:10px;
-}
-#menu li{
+    font-variant: small-caps;
+    padding: 10px;
+} 
+
+#menu li {
     list-style-type: none;
     display: inline-flex;
 }
-#menu ul{
-    padding: 0;
+
+#menu ul {
+    padding-left: 0;
     margin: 0;
     text-align: center;
     font-size: 1.2em;
 }
-#menu{
+
+#menu {
     height: 50px;
     background-image: url('../images/fondo_menu.png');
     background-repeat: no-repeat;
     background-position-x: center;
 }
-.container{
+
+.container {
     width: 980px;
-    margin:auto;
+    margin: auto;
 }
-#nota-principal{
+
+#nota-principal {
     padding: 8px;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0 0 10px gray;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.cajaflex{display: flex;}
-.cajaflex.between {justify-content: space-between;}
-.cajaflex.around {justify-content: space-between;}
+
+.cajaflex { display: flex; }
+.cajaflex.between { justify-content: space-between; }
+.cajaflex.around { justify-content: space-around; }
 
 .titulo-nota{
     font-variant: small-caps;
+    font-size: 1.8em;
 }
 
 .titulo-nota>a {
     color: #b92025;
     text-decoration: none;
-    font-size: 1.8em;
 }
 
-.titulo-nota>a:hover {text-decoration: underline;}
-
-.intro-nota {
-    text-align: justify;
+.titulo-nota>a:hover { text-decoration: underline; }
+.intro-nota { 
+    text-align: justify; 
     margin-top: 8px;
-}
+    }
+
 .leer-nota {
-    display: inline-block;
+    display:inline-block;
     width: 118px;
     height: 30px;
-    background-image: url('../images/boton_rojo.png');
+    background-image: url(../images/boton_rojo.png);
     text-decoration: none;
     color: white;
     text-align: center;
     font-variant: small-caps;
     padding-top: 5px;
-    margin-top: 5px;
 }
+
 .contenido-nota {
     width: 62%;
 }
@@ -108,53 +112,162 @@ p,h1,h2,h3,h4,h5,h6,figure{
 .sombra-imagen {
     box-shadow: 0 0 5px gray;
 }
-.imagen-nota{
+
+.imagen-nota {
     position: relative;
 }
+
 .imagen-nota>figcaption {
     width: 66px;
     height: 31px;
-    background-image: url('../images/cinta.png');
+    background-image: url(../images/cinta.png);
     padding-left: 15px;
-    padding-top: 6px; 
+    padding-top: 6px;
     position: absolute;
     top: 15px;
-    left: -12px;
+    left: -11px;
 }
+
 #notas>article {
-    background-image: url('../images/sombra_notas_abajo.png');
+    background-image: url(../images/sombra_notas_abajo.png);
+    background-position: bottom center;
     background-repeat: no-repeat;
     padding-bottom: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
-#banners {
+
+#banners{
     border-left: 1px solid gray;
     padding-left: 10px;
     margin-left: 10px;
 }
-#banners>a{
+#banners>a {
     display: block;
     margin-bottom: 10px;
 }
-#programas{
-    margin:20px 0;
+
+#programas {
+    margin: 40px 0;
 }
-#enlaces>.bloque>h3{
+
+#enlaces>.bloque>h3 {
     font-variant: small-caps;
     color: #b92025;
     font-size: 1.5em;
     border-bottom: 1px solid lightgray;
     margin-bottom: 10px;
 }
-#enlaces>.bloque>a{
+
+#enlaces>.bloque>a {
     color: black;
     text-decoration: none;
     display: block;
 }
-#enlaces>.bloque>a:hover{color: #b92025;}
 
-#enlaces>.bloque{
-    padding: 0 15px;
-    line-height: 1.8em;
+#enlaces>.bloque>a:hover { color:#b92025; }
+
+#enlaces>.bloque {
+     padding: 0 15px;
+     line-height: 1.8em;
+
+ }
+
+#enlaces {margin-bottom: 40px;}
+/*Actividad final*/
+/*Organizar las reglas CSS descritos debajo, por secciones del sitio y por tipo de regla
+border:doble 3px*/
+div{
+    display: block;
 }
-#enlaces{margin-bottom: 40px;}
+#pie {
+    margin-bottom: 20px;
+}
+#encabezado, #barnav, #contenido, #pie {
+    width: 980px;
+    margin: 0 auto;
+}
+#politicas, #politicas a {
+    color: #6b6b6b;
+}
+a {text-decoration: none;}
+#politicas {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    font-variant: small-caps;
+}
+
+#contenido, .linea {
+    background: 0 100% url(../images/linea_doble.gif?1382941343) repeat-x;
+    padding: 10px 0;
+}
+abbr[title], abbr[data-original-title] {
+    cursor: help;
+    border-bottom: 1px dotted #999;
+}
+.frm-busqueda {
+    background: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    box-shadow: 1px 0 0 #f8f8f8;
+    padding: 5px 5px 3px 5px;
+    position: relative;
+}
+.derecha{ float: right;}
+
+#separador-sems {
+    margin: 0 0 30px;
+    position: relative;
+    clear: both;
+}
+#separador-sems #logo-sems {
+    background-image: url(../images/sems_footer.png?1382946314);
+    background-repeat: no-repeat;
+    display: block;
+    height: 60px;
+    width: 215px;
+    margin: 0 auto;
+    text-indent: -9999px;
+}
+#separador-sems #logo-sems::before {
+    left: 0;
+}
+#separador-sems #logo-sems::before, #separador-sems #logo-sems::after {
+background: 0 100% url(../images/linea_doble.gif?1382941343) repeat-x;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 370px;
+    bottom: 28px;
+}
+#separador-sems #logo-sems::after {
+    right: 0;
+}
+a {
+    text-decoration: none;
+    color: #b92025;
+}
+
+.organizar{
+   margin-top: -40px;
+}
+.organizar2{
+    margin-bottom: 5px;
+}
+.derecha {
+  float: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.izquierda{
+  float: left;
+}
+#direccion{
+    color: #848484;
+    font: 14px/17px serif;
+    text-align: center;
+}
+#direccion a{
+    color: #848484;
+}
